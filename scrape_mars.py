@@ -30,7 +30,7 @@ def scrape():
     mars_facts_data['news_paragraph'] = news_paragraph
 
     # Mars Featured Image
-    image_url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=featured#submit"
+    image_url = "https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars"
     browser.visit(image_url)
     browser.is_text_present('FULL IMAGE')
     browser.click_link_by_partial_text('FULL IMAGE')
